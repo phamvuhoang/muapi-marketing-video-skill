@@ -1,0 +1,29 @@
+{
+  "_comment": "Add the 'muapi-video-marketing' block to your Claude config file.",
+  "_claude_desktop_path": "~/Library/Application Support/Claude/claude_desktop_config.json",
+  "_claude_code_path": "~/.claude.json  (add to the mcpServers section)",
+
+  "mcpServers": {
+    "muapi-video-marketing": {
+      "command": "node",
+      "args": ["/ABSOLUTE/PATH/TO/muapi-video-marketing/mcp-server/dist/index.js"],
+      "env": {
+        "MUAPI_API_KEY": "your_muapi_key_here"
+      }
+    }
+  },
+
+  "_alternative_dev_mode": {
+    "_comment": "Use this during development (no build step needed)",
+    "mcpServers": {
+      "muapi-video-marketing": {
+        "command": "npx",
+        "args": ["ts-node", "/ABSOLUTE/PATH/TO/muapi-video-marketing/mcp-server/src/index.ts"],
+        "env": {
+          "MUAPI_API_KEY": "your_muapi_key_here",
+          "TS_NODE_PROJECT": "/ABSOLUTE/PATH/TO/muapi-video-marketing/mcp-server/tsconfig.json"
+        }
+      }
+    }
+  }
+}

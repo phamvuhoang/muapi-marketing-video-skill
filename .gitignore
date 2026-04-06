@@ -1,0 +1,43 @@
+# dependencies
+node_modules/
+mcp-server/node_modules/
+
+# build output
+mcp-server/dist/
+
+# environment
+.env
+.env.*
+!.env.example
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.user
+
+# editor temporaries
+*~
+*.swp
+*.swo
+
+# TypeScript
+*.tsbuildinfo
+
+# misc
+*.pem
