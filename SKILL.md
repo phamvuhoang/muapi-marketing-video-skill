@@ -1,19 +1,31 @@
 ---
 name: muapi-video-marketing
 description: >
-  Create AI-generated marketing videos, product promos, social media clips, and brand videos
-  using MuAPI's generative media APIs — directly from Claude Code CLI or Claude Desktop.
-  ALWAYS use this skill when the user mentions: marketing video, product video, promo clip,
-  brand video, social media video, ad video, TikTok/Reels/YouTube content creation, AI video,
-  storyboard to video, or any request to generate/produce video content with AI.
-  This skill orchestrates the full pipeline: brief → storyboard → image generation →
-  image-to-video animation → background music → optional lipsync → delivery.
-  Use even if the user only asks for a single step (e.g. "generate a video from this image").
+  Create AI-generated marketing videos using MuAPI's generative media APIs.
+  Handles the complete pipeline: creative brief → storyboard → image generation →
+  video animation → background music → optional lipsync.
+  Use this skill for: marketing videos, product promos, social media clips (TikTok/Reels/YouTube),
+  brand videos, AI-generated video content, or any request to produce videos with AI.
 ---
 
 # MuAPI Video Marketing Skill
 
 Orchestrates AI-powered marketing video production via MuAPI's REST APIs and MCP tools.
+
+## Quick Start
+
+1. **Have your MuAPI API key?** Get one at https://muapi.ai/dashboard
+2. **MCP server running?** Start with: `npx ts-node mcp-server/src/index.ts`
+3. **Ready to create?** Describe your video idea and this skill will handle:
+   - Storyboarding your concept
+   - Generating high-quality images
+   - Animating them into video clips
+   - Creating background music
+   - Delivering all assets
+
+See Prerequisites section below for detailed setup.
+
+---
 
 ## Prerequisites
 
